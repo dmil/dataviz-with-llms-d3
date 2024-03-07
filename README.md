@@ -1,6 +1,8 @@
 # dataviz-with-llms-d3
 NICAR 2024 | AI 303: Visualizing data with large language models
 
+## [Slides](https://docs.google.com/presentation/d/1f3INfweSXUMEqRyKGkDSPE4a2WGoIPda_Hz_yckvQDk/edit#slide=id.p)
+
 Todos
 - [ ] Remove all Cowboy State Daily Specific Code 
 - [ ] Clean NLP notebook
