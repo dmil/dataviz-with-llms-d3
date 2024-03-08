@@ -1,61 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K1LTYGHH6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-7K1LTYGHH6');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bills in Maryland State Legislature</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>My HTML Page</title>
 </head>
 <body>
-  <div class="wrapper">
-    <div id="title">
-      <h1 id="headline"></h1>
-      <p>Bills in Maryland State Legislature</p>
-<!-- Add a search box and a button for clearing the search -->
-      <p class="instructions">Click on a button above or type a phrase in the search box below.</p>
-      
-    </div>
-    <div class="search-container">
-      <input type="text" id="searchBox" placeholder="Search Headlines">
-      <button id="clearButton">&#10006;</button>
-    </div>
-    <div id="chart" class="chart">
-      <p>Articles that are semantically similar appear closer together in the chart below.</p>
-    </div>
-    <div id="headline-table-wrapper" class="hidden">
-      <p class="instructions chart">Hover on a headline to see its location in the semantic map above.</p>
-      <div id="headline-table">  
-        <table>
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Date</th>
-            </tr>
-          </thead>
-          <tbody id="headline-table-body"></tbody>
-        </table>
-        <br/>
-      </div>
-    </div>
-    <div id="methodology-box">
-      <h3>Methodology</h3>
-      <p>Articles were collected from BillTrack50 and converted to text embeddings using OpenAI's <a href="https://platform.openai.com/docs/guides/embeddings">embeddings API endpoint</a>. The distances between embeddings were then visualized in a <a href="https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">two-dimensional t-sne plot</a> using the scikit-learn package in Python. A two-dimenional hoverable scatter plot was then generated in D3 with the help of Open AI's ChatGPT 3.5 using the following prompt:</p>
-      <blockquote>
-        <p>I have a CSV file named bills-with-nlp.csv with the following columns: State,Bill Number,title,Summary,Bill Progress,Last Action,publish_date,keywords,combined,ada_embedding,embedding,x,y. Show me the code to make a scatterplot in D3 with a tooltip. Each dot should be placed at x,y. When a user hovers on the tooltip, they should see the title and publish date. When they click on a dot, it should navigate to the url. And please add a search box that will let users filter by searching the title column.
-        </p>
-      </blockquote>
-    </div>
-  </div>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="script.js"></script>
+    <h1>Replace this page with the HTML you get from ChatGPT</h1>
+    <p> Visit <a href="http://data4news.com">data4news.com</a> to see a starter prompt.</p>
 </body>
 </html>
