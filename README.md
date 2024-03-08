@@ -24,14 +24,14 @@ Hit the "Go Live" button on the bottom right side of the window to see your webp
 
 
 ## Todos (for Dhrumil and Aarushi)
-- [ ] Remove all Cowboy State Daily Specific Code 
+- [x] Remove all Cowboy State Daily Specific Code 
 - [x] Clean NLP notebook
-- [ ] Throw slides together
+- [x] Throw slides together
 - [x] Figure out initial prompt
-- [ ] Figure out additional tasks (features for people to add)
-- [ ] Make Prompt Bank (make sure it's what we want)
+- [x] Figure out additional tasks (features for people to add)
+- [x] Make Prompt Bank (make sure it's what we want)
 - [ ] Make sure all instructions are in README and can be followed
-- [ ] Get this thing running in codespaces or tell them what we need in terms of setup (just vscode)
+- [x] Get this thing running in codespaces or tell them what we need in terms of setup (just vscode)
 
 Nice to have
 - [ ] Add all bills for MD (api key)
