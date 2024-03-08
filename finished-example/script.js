@@ -1,5 +1,5 @@
 // Read the data
-d3.csv("bills-with-nlp.csv").then(function(data) {
+d3.csv("../bills-with-embeddings.csv").then(function(data) {
     // Parse the data
     data.forEach(function(d) {
       d.x = +d.x;

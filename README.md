@@ -16,7 +16,7 @@ The button should open up a GitHub Codespace (VS Code in the cloud!). It may tak
 
 ## [Slides](https://docs.google.com/presentation/d/1f3INfweSXUMEqRyKGkDSPE4a2WGoIPda_Hz_yckvQDk/edit#slide=id.p)
 ## Initial Prompt 
-> I have a CSV file named bills-with-nlp.csv with the following columns: State,Bill Number,Name,Summary,Bill Progress,Last Action,Action Date,keywords,embedding,x,y
+> I have a CSV file named bills-with-embeddings.csv with the following columns: State,Bill Number,Name,Summary,Bill Progress,Last Action,Action Date,keywords,embedding,x,y
 >
 > Show me the code to make a scatterplot in D3 with a tooltip. Each dot should be placed at x,y. When a user hovers on the tooltip, they should see the Bill Number,  Name, Last Action, and Action Date. And please add a search box that will let users filter by searching the Name column.
 >
