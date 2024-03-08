@@ -12,34 +12,15 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explore All Of Cowboy State Daily's Coverage</title>
+  <title>Bills in Maryland State Legislature</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="wrapper">
     <div id="title">
       <h1 id="headline"></h1>
-      <p>Articles published by Cowboy State Daily through July 21, 2023.</p>
-      <!-- Add buttons with the specified filter terms -->
-      <div id="energyButtons">
-        <button class="filterButton" onclick="setFilterText('climate change')">Climate Change</button>
-        <button class="filterButton" onclick="setFilterText('fossil fuel')">Fossil Fuel</button>
-        <button class="filterButton" onclick="setFilterText('wind')">Wind</button>
-        <button class="filterButton" onclick="setFilterText('solar')">Solar</button>
-        <button class="filterButton" onclick="setFilterText('oil')">Oil</button>
-        <button class="filterButton" onclick="setFilterText('gas')">Gas</button>
-        <button class="filterButton" onclick="setFilterText('energy')">Energy</button>
-        <button class="filterButton" onclick="setFilterText('coal')">Coal</button>
-      </div>
-
-      <div id="transButtons">
-        <button class="filterButton" onclick="setFilterText('transgender')">Transgender</button>
-        <button class="filterButton" onclick="setFilterText('trans')">Trans</button>
-        <button class="filterButton" onclick="setFilterText('biological')">Biological</button>
-        <button class="filterButton" onclick="setFilterText('groom')">Groom</button>
-        <button class="filterButton" onclick="setFilterText('queer')">Queer</button>
-      </div>
-      <!-- Add a search box and a button for clearing the search -->
+      <p>Bills in Maryland State Legislature</p>
+<!-- Add a search box and a button for clearing the search -->
       <p class="instructions">Click on a button above or type a phrase in the search box below.</p>
       
     </div>
@@ -67,9 +48,9 @@
     </div>
     <div id="methodology-box">
       <h3>Methodology</h3>
-      <p>Articles were collected from Cowboy State Daily and converted to text embeddings using OpenAI's <a href="https://platform.openai.com/docs/guides/embeddings">embeddings API endpoint</a>. The distances between embeddings were then visualized in a <a href="https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">two-dimensional t-sne plot</a> using the scikit-learn package in Python. A two-dimenional hoverable scatter plot was then generated in D3 with the help of Open AI's ChatGPT 3.5 using the following prompt:</p>
+      <p>Articles were collected from BillTrack50 and converted to text embeddings using OpenAI's <a href="https://platform.openai.com/docs/guides/embeddings">embeddings API endpoint</a>. The distances between embeddings were then visualized in a <a href="https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">two-dimensional t-sne plot</a> using the scikit-learn package in Python. A two-dimenional hoverable scatter plot was then generated in D3 with the help of Open AI's ChatGPT 3.5 using the following prompt:</p>
       <blockquote>
-        <p>I have a CSV file named vis_dims.csv with the following columns: title, publish_date, website, url, authors, x and y. Show me the code to make a scatterplot in D3 with a tooltip. Each dot should be placed at x,y. When a user hovers on the tooltip, they should see the title and publish date. When they click on a dot, it should navigate to the url. And please add a search box that will let users filter by searching the title column.
+        <p>I have a CSV file named bills-with-nlp.csv with the following columns: State,Bill Number,title,Summary,Bill Progress,Last Action,publish_date,keywords,combined,ada_embedding,embedding,x,y. Show me the code to make a scatterplot in D3 with a tooltip. Each dot should be placed at x,y. When a user hovers on the tooltip, they should see the title and publish date. When they click on a dot, it should navigate to the url. And please add a search box that will let users filter by searching the title column.
         </p>
       </blockquote>
     </div>
