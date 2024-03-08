@@ -2,19 +2,17 @@
 
 NICAR 2024 | AI 303: Visualizing data with large language models
 
-For instructions and resources see https://data4news.com
+##  For workshop instructions visit https://data4news.com
 
 ## Usage
 
 Click the button below to open this repository in GitHub Codespaces.
+
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/docs)
 
-- You can fill `index.html`, `style.css`, and `script.js` with the code ChatGPT gives you. 
-- Hit the "Go Live" button on the bottom right side of the window to see your webpage in action.
+Hit the "Go Live" button on the bottom right side of the window to see your webpage in action. You should be able to modify the webpage and see it in the window that just opened. You can fill `index.html`, `style.css`, and `script.js` with the code ChatGPT gives once you enter your starter prompt.
 
-
-
-
+## Notes to ourselves - remove before teaching👇 
 
 ## [Slides](https://docs.google.com/presentation/d/1f3INfweSXUMEqRyKGkDSPE4a2WGoIPda_Hz_yckvQDk/edit#slide=id.p)
 ## Initial Prompt 
