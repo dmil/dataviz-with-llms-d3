@@ -1,4 +1,4 @@
-NICAR 2024 | AI 303: Visualizing data with large language models
+Visualizing data with large language models
 
 ## How to use this repo
 
