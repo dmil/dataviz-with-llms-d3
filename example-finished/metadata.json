@@ -1,37 +1,22 @@
 {
-    "start": "2024-02-26T00:00:00",
-    "end": "2024-03-01T00:00:00",
-    "query": "*",
-    "query_raw": "* AND language:en AND domain:(nytimes.com OR cnn.com OR foxnews.com OR nypost.com OR washingtonpost.com OR usatoday.com OR cnbc.com OR theguardian.com OR breakingnews.com OR buzzfeed.com OR reuters.com OR huffingtonpost.com OR usnews.com OR latimes.com OR politico.com OR newsweek.com OR breitbart.com)",
+    "start": "2024-09-14T00:00:00",
+    "end": "2024-09-25T20:33:16.167135",
+    "query": "(title:Kamala OR title:Trump)",
+    "query_raw": "(title:Kamala OR title:Trump) AND language:en AND domain:(nytimes.com OR cnn.com OR foxnews.com OR nypost.com OR washingtonpost.com OR usatoday.com OR cnbc.com OR theguardian.com OR breakingnews.com OR buzzfeed.com OR cbsnews.com OR reuters.com OR huffingtonpost.com OR usnews.com OR latimes.com OR politico.com OR newsweek.com OR breitbart.com)",
     "topics": [
         {
             "topic": -1,
-            "num_articles": 6239
+            "num_articles": 1177
         },
         {
             "topic": 0,
-            "num_articles": 14,
-            "topic_summary": "Michigan Politics: 2024 Election and Gaza"
+            "num_articles": 57,
+            "topic_summary": "Donald Trump assassination attempts"
         },
         {
             "topic": 1,
-            "num_articles": 14,
-            "topic_summary": "Gaza Aid and Cease-fire"
-        },
-        {
-            "topic": 2,
-            "num_articles": 13,
-            "topic_summary": "Richard Lewis Tribute & Passing"
-        },
-        {
-            "topic": 4,
-            "num_articles": 12,
-            "topic_summary": "Royal family health concerns."
-        },
-        {
-            "topic": 3,
             "num_articles": 10,
-            "topic_summary": "Hunter Biden Impeachment Inquiry"
+            "topic_summary": "Kamala Harris polling success"
         }
     ]
 }
