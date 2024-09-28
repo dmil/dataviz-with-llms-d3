@@ -5,66 +5,67 @@
     "query_raw": "(title:Kamala OR title:Trump) AND language:en AND domain:(nytimes.com OR cnn.com OR foxnews.com OR nypost.com OR washingtonpost.com OR usatoday.com OR cnbc.com OR theguardian.com OR breakingnews.com OR buzzfeed.com OR cbsnews.com OR reuters.com OR huffingtonpost.com OR usnews.com OR latimes.com OR politico.com OR newsweek.com OR breitbart.com)",
     "topics": [
         {
-            "topic": -1,
-            "num_articles": 3264
-        },
-        {
             "topic": 0,
-            "num_articles": 280,
-            "topic_summary": "Trump-Harris Debate Dynamics"
-        },
-        {
-            "topic": 2,
-            "num_articles": 77,
-            "topic_summary": "Trump Assassination Attempt"
+            "num_articles": 3264,
+            "topic_summary": "uncategorized"
         },
         {
             "topic": 1,
-            "num_articles": 34,
-            "topic_summary": "Taylor Swift's Kamala Harris Endorsement"
+            "num_articles": 280,
+            "topic_summary": "2016 US Presidential Election"
         },
         {
             "topic": 3,
-            "num_articles": 22,
-            "topic_summary": "Arlington Cemetery Trump Incident"
+            "num_articles": 77,
+            "topic_summary": "Trump assassination attempt."
         },
         {
-            "topic": 7,
-            "num_articles": 20,
-            "topic_summary": "\"Trump Media Stock Volatility\""
+            "topic": 2,
+            "num_articles": 34,
+            "topic_summary": "Celebrity endorsements in politics"
+        },
+        {
+            "topic": 4,
+            "num_articles": 22,
+            "topic_summary": "Arlington Cemetery Trump Controversy"
         },
         {
             "topic": 8,
-            "num_articles": 17,
-            "topic_summary": "Liz Cheney Supports Kamala Harris"
+            "num_articles": 20,
+            "topic_summary": "Trump Media stock fluctuations"
         },
         {
-            "topic": 5,
+            "topic": 9,
+            "num_articles": 17,
+            "topic_summary": "Cheney Endorses Harris"
+        },
+        {
+            "topic": 6,
             "num_articles": 11,
             "topic_summary": "Trump's Hush Money Case"
         },
         {
-            "topic": 11,
+            "topic": 12,
             "num_articles": 11,
-            "topic_summary": "Campaign Fundraising Comparison"
+            "topic_summary": "Harris Outraises Trump Fundraising"
         },
         {
-            "topic": 4,
+            "topic": 5,
             "num_articles": 10,
-            "topic_summary": "Trump Election Case Updates"
+            "topic_summary": "Trump election legal proceedings."
         },
         {
-            "topic": 6,
+            "topic": 7,
             "num_articles": 10,
             "topic_summary": "RFK Jr. Endorses Trump"
         },
         {
-            "topic": 9,
+            "topic": 10,
             "num_articles": 10,
-            "topic_summary": "Nebraska Electoral College Debate"
+            "topic_summary": "Nebraska Electoral College Changes"
         },
         {
-            "topic": 10,
+            "topic": 11,
             "num_articles": 10,
             "topic_summary": "Jack Smith's Trump Indictment"
         }

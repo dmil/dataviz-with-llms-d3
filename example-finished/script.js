@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
       /* Make topic buttons */
       const topicButtonsContainer = document.getElementById('topicButtons');
       // get the first 10 topics that have a summary
-      const topics = metadata.topics.slice(1, 21);
+      const topics = metadata.topics;
 
       topics.forEach(topic => {
         const button = document.createElement('button');
