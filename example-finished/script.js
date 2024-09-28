@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
   // Load data from CSV file
-  d3.csv("../stories-with-embeddings.csv").then(function(data) {
+  d3.csv("http://dhrumil-public.s3.us-west-2.amazonaws.com/stories-with-embeddings.csv").then(function(data) {
     // load from metadata.json
     d3.json("metadata.json").then(function(metadata) {
       
