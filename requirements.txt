@@ -4,3 +4,4 @@ yake
 pandarallel
 retrying
 requests_cache
+ipywidgets
