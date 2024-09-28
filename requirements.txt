@@ -2,3 +2,5 @@ wayback-news-search
 mediacloud
 yake
 pandarallel
+retrying
+requests_cache
