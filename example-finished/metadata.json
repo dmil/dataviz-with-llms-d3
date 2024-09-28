@@ -3,20 +3,42 @@
     "end": "2024-09-25T20:33:16.167135",
     "query": "(title:Kamala OR title:Trump)",
     "query_raw": "(title:Kamala OR title:Trump) AND language:en AND domain:(nytimes.com OR cnn.com OR foxnews.com OR nypost.com OR washingtonpost.com OR usatoday.com OR cnbc.com OR theguardian.com OR breakingnews.com OR buzzfeed.com OR cbsnews.com OR reuters.com OR huffingtonpost.com OR usnews.com OR latimes.com OR politico.com OR newsweek.com OR breitbart.com)",
-    "topics": [
-        {
-            "topic": -1,
-            "num_articles": 1177
-        },
-        {
-            "topic": 0,
-            "num_articles": 57,
-            "topic_summary": "Donald Trump assassination attempts"
-        },
-        {
-            "topic": 1,
-            "num_articles": 10,
-            "topic_summary": "Kamala Harris polling success"
-        }
-    ]
+    "topics": [{"topic": -1, "num_articles": 3543},
+    {"topic": 0,
+     "num_articles": 265,
+     "topic_summary": "Trump-Harris Debate Overview."},
+    {"topic": 2,
+     "num_articles": 57,
+     "topic_summary": "Trump assassination attempt coverage."},
+    {"topic": 9,
+     "num_articles": 36,
+     "topic_summary": "Trump-Harris Debate Analysis"},
+    {"topic": 1,
+     "num_articles": 34,
+     "topic_summary": "Taylor Swift's Political Endorsements"},
+    {"topic": 3,
+     "num_articles": 22,
+     "topic_summary": "\"Trump Incident at Arlington\""},
+    {"topic": 7,
+     "num_articles": 20,
+     "topic_summary": "Republicans endorse Kamala Harris."},
+    {"topic": 10,
+     "num_articles": 17,
+     "topic_summary": "Trump Election Subversion Hearing"},
+    {"topic": 11,
+     "num_articles": 15,
+     "topic_summary": "Trump Media stock fluctuations"},
+    {"topic": 5,
+     "num_articles": 11,
+     "topic_summary": "Trump's hush money sentencing battle."},
+    {"topic": 12,
+     "num_articles": 11,
+     "topic_summary": "Harris fundraising outpaces Trump."},
+    {"topic": 4,
+     "num_articles": 10,
+     "topic_summary": "Trump Election Case Developments"},
+    {"topic": 6, "num_articles": 10, "topic_summary": "RFK Jr. endorses Trump"},
+    {"topic": 8,
+     "num_articles": 10,
+     "topic_summary": "Jack Smith's Trump Indictment"}]
 }
