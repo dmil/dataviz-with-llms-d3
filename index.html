@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My HTML Page</title>
+    <style>
+    section {
+        margin-bottom: 40px;
+      }
+      .example-prompt pre {
+        background-color: #f0f0f0;
+        padding: 15px;
+      }
+      
+      .example-prompt .prompt {
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-left: 3px solid #007bff;
+        font-family: monospace;
+        overflow: auto; /* Ensures long text can be scrolled horizontally */
+        white-space: pre-wrap; /* Keeps the formatting of the prompt but wraps text */
+        word-wrap: break-word;
+      }
+
+      /* Button styling */
+      .navigate-button {
+          display: inline-block;
+          padding: 12px 24px;
+          background-color: #007bff;
+          color: white;
+          text-align: center;
+          border-radius: 5px;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: bold;
+          transition: background-color 0.3s, box-shadow 0.3s;
+          border: none;
+          cursor: pointer;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Hover effect */
+      .navigate-button:hover {
+          background-color: #0056b3;
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Active button state (when clicked) */
+      .navigate-button:active {
+          background-color: #003d82;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Disabled state (if needed in the future) */
+      .navigate-button:disabled {
+          background-color: #cccccc;
+          cursor: not-allowed;
+          box-shadow: none;
+      }
+
+      /* Make the button more prominent on smaller screens */
+      @media (max-width: 768px) {
+          .navigate-button {
+              font-size: 14px;
+              padding: 10px 20px;
+          }
+      }
+
+      </style>
+</head>
+<body>
+    <h1>Replace this page with the HTML you get from ChatGPT</h1>
+    <p> Visit <a href="http://data4news.com", target="_blank">data4news.com</a> to see these instructions again.</p>
+    <section class="example-prompt">
+        <h2>Example Prompt to Get You Started</h2>
+        <ol>
+          <li><a href="chat.openai.com"></a>Login to ChatGPT</a> and enter the prompt below.</li>
+          <p class="prompt">I am looking to build a data visualization of some news stories in d3.js. The stories are from various news outlets from 8/22/2024 and 9/26/2024 and the data source is a database called MediaCloud.
+
+  The data is in a CSV file named ../stories-with-embeddings.csv with the following columns: title, publication_date, domain, topic, topic_summary, x, y, url
+
+
+  Show me the code to make a scatterplot in D3 with a tooltip. Each dot should be placed at x,y. When a user hovers on the tooltip, they should see the title, publication_date and domain. And please add a search box that will let users filter by searching the title column.
+
+  Please provide the HTML, CSS and JS in separate files named index.html, style.css and script.js respectively
+          </p>
+          <li>It will give you three files (index.html, stlye.css and script.js). </li>
+          <li>Open the <strong>your-chart</strong> folder in the code and you'll find three empty files with the names <strong>index.html</strong>, <strong>stlye.css</strong> and <strong>script.js</strong>.</li>
+          <li><a href="/your-chart/index.html" class="navigate-button">Click this link to see your chart!</a></li>
+        </ol>
+    </section>
+</body>
+</html>

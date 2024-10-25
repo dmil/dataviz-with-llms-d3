@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K1LTYGHH6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7K1LTYGHH6');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore MediaCloud Coverage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div id="title">
+      <h1> Semantic Search </h1>
+      <h1 id="headline"></h1>
+      <p id="subhed">TKTK</p>
+
+      <!-- topic buttons -->
+      <div id="topicButtons">
+        <h2>Filter to a topic</h2>
+
+      </div>
+
+      <!-- filter buttons -->
+      <div id="filterButtons">
+        <h2>Filter to a domain</h2>
+
+      </div>
+
+      <!-- Add buttons with the specified filter terms -->
+      <div id="buttons">
+        <h2>Search Headlines</h2>
+        <button class="filterButton" onclick="setFilterText('harris')">Harris</button>
+        <button class="filterButton" onclick="setFilterText('trump')">Trump</button>
+        <p class="instructions">Click on a button above or type a phrase in the search box below.</p>
+      </div>      
+      
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchBox" placeholder="Search Headlines">
+      <button id="clearButton">&#10006;</button>
+    </div>
+    <div id="chart" class="chart">
+      <p>Articles that are semantically similar appear closer together in the chart below.</p>
+    </div>
+    <div id="headline-table-wrapper" class="hidden">
+      <p class="instructions chart">Hover on a headline to see its location in the semantic map above.</p>
+      <div id="headline-table">  
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Date</th>
+              <th>Website</th>
+            </tr>
+          </thead>
+          <tbody id="headline-table-body"></tbody>
+        </table>
+        <br/>
+      </div>
+    </div>
+    <div id="methodology-box">
+      <h3>Methodology</h3>
+      <p>Articles were collected from MediaCloud and converted to text embeddings using OpenAI's <a href="https://platform.openai.com/docs/guides/embeddings">embeddings API endpoint</a>. The distances between embeddings were then visualized in a <a href="https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">two-dimensional t-sne plot</a> using the scikit-learn package in Python. A two-dimenional hoverable scatter plot was then generated in D3 with the help of Open AI's ChatGPT 3.5 using the following prompt:</p>
+      <blockquote>
+        <p>I have a CSV file named vis_dims.csv with the following columns: title, publish_date, website, url, authors, x and y. Show me the code to make a scatterplot in D3 with a tooltip. Each dot should be placed at x,y. When a user hovers on the tooltip, they should see the title and publish date. When they click on a dot, it should navigate to the url. And please add a search box that will let users filter by searching the title column.
+        </p>
+      </blockquote>
+    </div>
+  </div>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

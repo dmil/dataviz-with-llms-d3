@@ -1,0 +1,1 @@
+// Delete this text and put the JS you get from ChatGPT in this file.
