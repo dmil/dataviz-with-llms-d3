@@ -74,19 +74,27 @@
         <h2>Example Prompt to Get You Started</h2>
         <ol>
           <li><a href="chat.openai.com"></a>Login to ChatGPT</a> and enter the prompt below.</li>
-          <p class="prompt">I am looking to build a data visualization of some news stories in d3.js. The stories are from various news outlets from 8/22/2024 and 9/26/2024 and the data source is a database called MediaCloud.
-
-  The data is in a CSV file named ../stories-with-embeddings.csv with the following columns: title, publication_date, domain, topic, topic_summary, x, y, url
-
-
-  Show me the code to make a scatterplot in D3 with a tooltip. Each dot should be placed at x,y. When a user hovers on the tooltip, they should see the title, publication_date and domain. And please add a search box that will let users filter by searching the title column.
-
-  Please provide the HTML, CSS and JS in separate files named index.html, style.css and script.js respectively
+          <p class="prompt">I am looking to build a data visualization of some news stories in d3.js. The stories are from various news outlets from 7/1/2024 and 10/25/2024 and the data source is stories from peachtreetimes.com
+The data is in a CSV file named ../peachtreetimes.csv with the following columns: title, publication_date, domain, topic, topic_summary, x, y, url
+Show me the code to make a scatterplot in D3 with a tooltip. Each dot should be placed at x,y. When a user hovers on the tooltip, they should see the title, publication_date and domain. And please add a search box that will let users filter by searching the title column.
+Please provide the HTML, CSS and JS in separate files named index.html, style.css and script.js respectively
           </p>
           <li>It will give you three files (index.html, stlye.css and script.js). </li>
           <li>Open the <strong>your-chart</strong> folder in the code and you'll find three empty files with the names <strong>index.html</strong>, <strong>stlye.css</strong> and <strong>script.js</strong>.</li>
           <li><a href="/your-chart/index.html" class="navigate-button">Click this link to see your chart!</a></li>
         </ol>
     </section>
+
+    <!-- Challenges Section -->
+    <section class="challenges-section">
+        <h2>Challenges</h2>
+        <p>After you have built your chart, try to enhance it with these challenges:</p>
+        <ul>
+            <li><strong>Easy:</strong> Make an author dropdown box.</li>
+            <li><strong>Medium:</strong> Add a date picker or a slider. Ex: Make a date picker that highlights only today's data points.</li>
+            <li><strong>Hard:</strong> A file for all of Georgia is in the answerkey folder. Make a button for each news outlet.</li>
+        </ul>
+    </section>
+
 </body>
 </html>

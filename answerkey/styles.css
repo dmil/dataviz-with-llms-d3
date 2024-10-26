@@ -1,0 +1,280 @@
+/* Responsive layout styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#description {
+    text-align: center;
+    font-size: 1.1em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.4;
+}
+
+#description a {
+    color: #3FB8AF;
+    text-decoration: none;
+}
+
+#description a:hover {
+    text-decoration: underline;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+#controls-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#scatter-plot-wrapper {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 800px; /* Adjust this value as needed */
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100%; /* This creates a 1:1 aspect ratio */
+}
+
+#scatter-plot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#info-box {
+    flex-grow: 1;
+    min-height: 200px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+/* Search box styles */
+#search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#search-box {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-button, #reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3FB8AF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover, #reset-button:hover {
+    background-color: #2D8B84;
+}
+
+/* Date slider styles */
+#date-slider-container {
+    margin: 20px 0;
+}
+
+#date-slider {
+    margin-bottom: 10px;
+}
+
+#date-range {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Info box styles */
+.info-box {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.4em;
+}
+
+/* Tooltip styles */
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 6px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* GitHub ribbon styles */
+.github-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* noUiSlider custom styles */
+.noUi-connect {
+    background: #3FB8AF;
+}
+
+/* Slim handle styles */
+.noUi-handle {
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    cursor: default;
+    box-shadow: inset 0 0 1px #FFF,
+                inset 0 1px 7px #EBEBEB,
+                0 3px 6px -3px #BBB;
+    width: 4px;
+}
+
+/* Remove default handle pseudo-elements */
+.noUi-handle:before,
+.noUi-handle:after {
+    display: none;
+}
+
+/* Slider bar styles */
+.noUi-horizontal {
+    height: 20px;  /* Increased height to match handle */
+    background: #D3D3D3;
+    border: none;
+    box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+}
+
+/* Touch area for mobile usability */
+.noUi-touch-area {
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: -8px;
+    position: absolute;
+}
+
+/* Handle hover effect */
+.noUi-handle:hover {
+    background: #3FB8AF;
+}
+
+/* Slider background styles */
+.noUi-background {
+    background: #D3D3D3;
+    box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+}
+
+/* Range selection styles */
+.noUi-connect {
+    background: #3FB8AF;
+    box-shadow: inset 0 0 3px rgba(51,51,51,0.45);
+    -webkit-transition: background 450ms;
+    transition: background 450ms;
+}
+
+/* Tooltip styles for noUiSlider */
+.noUi-tooltip {
+    display: block;
+    position: absolute;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.noUi-horizontal .noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 120%;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: #3FB8AF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    #scatter-plot-wrapper {
+        width: 90vw; /* Adjust if needed */
+        margin: 0 auto;
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    #content-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #scatter-plot-wrapper {
+        width: 70%; /* Adjust as needed */
+        padding-bottom: 70%; /* Maintains the aspect ratio */
+    }
+
+    #info-box {
+        width: 30%; /* Adjust as needed */
+        align-self: stretch; /* Makes the info box full height */
+    }
+}
