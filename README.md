@@ -5,7 +5,8 @@ Visualizing data with large language models
 Click the button below to open this repository in GitHub Codespaces.
 
 ### Step 1
-This button should open up a GitHub Codespace (VS Code in the cloud!). It may take a few minutes to set up. 
+This button should open up a GitHub Codespace (VS Code in the cloud!). 
+It may take a few minutes to set up. 
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/dmil/dataviz-with-llms-d3)
 
