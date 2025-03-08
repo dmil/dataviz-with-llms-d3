@@ -1,0 +1,28 @@
+{
+    "start": "2025-02-10T00:00:00",
+    "end": "2025-03-08T08:30:34.655434",
+    "query": "(title:Musk OR title:DOGE)",
+    "query_raw": "(title:Musk OR title:DOGE) AND language:en AND domain:(nytimes.com OR cnn.com OR foxnews.com OR nypost.com OR washingtonpost.com OR usatoday.com OR cnbc.com OR theguardian.com OR breakingnews.com OR buzzfeed.com OR cbsnews.com OR reuters.com OR huffingtonpost.com OR usnews.com OR latimes.com OR politico.com OR newsweek.com OR breitbart.com)",
+    "topics": [
+        {
+            "topic": 0,
+            "num_articles": 579,
+            "topic_summary": "uncategorized"
+        },
+        {
+            "topic": 1,
+            "num_articles": 25,
+            "topic_summary": "Elon Musk and DOGE Operations"
+        },
+        {
+            "topic": 2,
+            "num_articles": 18,
+            "topic_summary": "Elon Musk's OpenAI Bid"
+        },
+        {
+            "topic": 3,
+            "num_articles": 10,
+            "topic_summary": "DOGE stimulus check debate"
+        }
+    ]
+}

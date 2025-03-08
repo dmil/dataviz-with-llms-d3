@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Semantic Map 🍑[DRAFT]</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K1LTYGHH6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7K1LTYGHH6');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore MediaCloud Coverage</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="https://github.com/dmil/numlock-nlp" class="github-ribbon">
-        <img src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" 
-             alt="Fork me on GitHub" width="149" height="149">
-    </a>
+  <div class="wrapper">
+    <div id="title">
+      <h1> Semantic Search </h1>
+      <h1 id="headline"></h1>
+      <p id="subhed">TKTK</p>
 
-    <div id="main-container">
-        <h1>Semantic Map [DRAFT]</h1>
-        <p id="description">
-            This is a "semantic map" of <strong><a href="https://peachtreetimes.com/" target="_blank" rel="noopener noreferrer">https://peachtreetimes.com/</a></strong> 🍑.
-        </p>
-        <div id="controls-container">
-            <div id="search-container">
-                <input type="text" id="search-box" placeholder="Search">
-                <button id="search-button">Search</button>
-                <button id="reset-button">Reset</button>
-            </div>
-            
-            <div id="date-slider-container">
-                <div id="date-slider"></div>
-                <div id="date-range">
-                    <span id="start-date"></span> - <span id="end-date"></span>
-                </div>
-            </div>
-        </div>
-        
-        <div id="content-container">
-            <div id="scatter-plot-wrapper">
-                <div id="scatter-plot"></div>
-            </div>
-            <div id="info-box" class="info-box">
-                Hover over a point to see the details. Click to navigate to the article.
-            </div>
-        </div>
+      <!-- topic buttons -->
+      <div id="topicButtons">
+        <h2>Filter to a topic</h2>
+
+      </div>
+
+      <!-- filter buttons -->
+      <div id="filterButtons">
+        <h2>Filter to a domain</h2>
+
+      </div>
+
+      <!-- Add buttons with the specified filter terms -->
+      <div id="buttons">
+        <h2>Search Headlines</h2>
+        <button class="filterButton" onclick="setFilterText('musk')">Musk</button>
+        <button class="filterButton" onclick="setFilterText('doge')">Doge</button>
+        <button class="filterButton" onclick="setFilterText('doge|musk')">Both</button>
+        <p class="instructions">Click on a button above or type a phrase in the search box below.</p>
+      </div>      
+      
     </div>
-
-    <footer>
-        <p>
-            This site was built by <a href="https://github.com/dmil">Dhrumil Mehta</a> with the help of 
-            <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer">OpenAI's ChatGPT</a> and 
-            <a href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer">Anthropic's Claude</a> 🤖
+    <div class="search-container">
+      <input type="text" id="searchBox" placeholder="Search Headlines">
+      <button id="clearButton">&#10006;</button>
+    </div>
+    <div id="chart" class="chart">
+      <p>Articles that are semantically similar appear closer together in the chart below.</p>
+    </div>
+    <div id="headline-table-wrapper" class="hidden">
+      <p class="instructions chart">Hover on a headline to see its location in the semantic map above.</p>
+      <div id="headline-table">  
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Date</th>
+              <th>Website</th>
+            </tr>
+          </thead>
+          <tbody id="headline-table-body"></tbody>
+        </table>
+        <br/>
+      </div>
+    </div>
+    <div id="methodology-box">
+      <h3>Methodology</h3>
+      <p>Articles were collected from MediaCloud and converted to text embeddings using OpenAI's <a href="https://platform.openai.com/docs/guides/embeddings">embeddings API endpoint</a>. The distances between embeddings were then visualized in a <a href="https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">two-dimensional t-sne plot</a> using the scikit-learn package in Python. A two-dimenional hoverable scatter plot was then generated in D3 with the help of Open AI's ChatGPT 3.5 using the following prompt:</p>
+      <blockquote>
+        <p>I have a CSV file named vis_dims.csv with the following columns: title, publish_date, website, url, authors, x and y. Show me the code to make a scatterplot in D3 with a tooltip. Each dot should be placed at x,y. When a user hovers on the tooltip, they should see the title and publish date. When they click on a dot, it should navigate to the url. And please add a search box that will let users filter by searching the title column.
         </p>
-    </footer>
-
-    <script src="script.js"></script>
+      </blockquote>
+    </div>
+  </div>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
