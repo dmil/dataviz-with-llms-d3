@@ -305,12 +305,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Function to format the publish date as "YYYY-MM-DD"
       function formatDate(date) {
-        const options = {
-          year: 'numeric',
-          month: '2-digit',
-          day: '2-digit'
-        };
-        return new Date(date).toLocaleDateString(undefined, options);
+        return new Date(date).toISOString().split('T')[0];
       }
 
       // Function to highlight the search query within the title
