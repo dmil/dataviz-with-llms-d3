@@ -6,28 +6,33 @@
     "topics": [
         {
             "topic": 0,
-            "num_articles": 1358,
+            "num_articles": 1380,
             "topic_summary": "uncategorized"
         },
         {
             "topic": 1,
-            "num_articles": 49,
-            "topic_summary": "Comfy Spring and Summer Shoes"
+            "num_articles": 51,
+            "topic_summary": "Comfortable stylish shoes."
         },
         {
             "topic": 2,
             "num_articles": 13,
-            "topic_summary": "Travel Products for Safety"
+            "topic_summary": "Travel Must-Haves & Safety"
         },
         {
-            "topic": 3,
+            "topic": 4,
             "num_articles": 12,
             "topic_summary": "Roland Garros Tennis Updates"
         },
         {
-            "topic": 4,
+            "topic": 3,
+            "num_articles": 11,
+            "topic_summary": "Football Transfer News Headlines"
+        },
+        {
+            "topic": 5,
             "num_articles": 10,
-            "topic_summary": "Nightclub Fire in North Macedonia"
+            "topic_summary": "Nightclub fire in North Macedonia"
         }
     ]
 }
