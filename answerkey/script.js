@@ -85,14 +85,17 @@ document.addEventListener("DOMContentLoaded", function() {
       // get the first 10 topics that have a summary
       const topics = metadata.topics;
 
-      topics.forEach(topic => {
-        const button = document.createElement('button');
-        button.textContent = topic.topic_summary;
-        button.value = topic.topic;
-        button.classList.add('topic-button'); // Add a class for styling or event binding
-        button.addEventListener('click', handleTopicButtonClick);
-        topicButtonsContainer.appendChild(button);
-      });
+      // Skip creating topic buttons since we removed the container
+      if (topicButtonsContainer) {
+        topics.forEach(topic => {
+          const button = document.createElement('button');
+          button.textContent = topic.topic_summary;
+          button.value = topic.topic;
+          button.classList.add('topic-button'); // Add a class for styling or event binding
+          button.addEventListener('click', handleTopicButtonClick);
+          topicButtonsContainer.appendChild(button);
+        });
+      }
 
       // function to handle topic button click
       function handleTopicButtonClick(topic) {
