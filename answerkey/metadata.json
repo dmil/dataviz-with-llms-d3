@@ -1,38 +1,38 @@
 {
     "start": "2025-01-01T00:00:00",
-    "end": "2025-08-29T00:00:00",
+    "end": "2025-09-07T00:00:00",
     "query": "Greece",
     "query_raw": "Greece AND language:en AND domain:(nytimes.com OR cnn.com OR foxnews.com OR nypost.com OR washingtonpost.com OR usatoday.com OR cnbc.com OR theguardian.com OR breakingnews.com OR buzzfeed.com OR cbsnews.com OR reuters.com OR huffingtonpost.com OR usnews.com OR latimes.com OR politico.com OR newsweek.com OR breitbart.com)",
     "topics": [
         {
             "topic": 0,
-            "num_articles": 1380,
+            "num_articles": 1382,
             "topic_summary": "uncategorized"
         },
         {
             "topic": 1,
             "num_articles": 51,
-            "topic_summary": "Comfortable stylish shoes."
+            "topic_summary": "Comfy and Stylish Footwear"
         },
         {
             "topic": 2,
             "num_articles": 13,
-            "topic_summary": "Travel Must-Haves & Safety"
+            "topic_summary": "Travel Packing Essentials"
         },
         {
             "topic": 4,
             "num_articles": 12,
-            "topic_summary": "Roland Garros Tennis Updates"
+            "topic_summary": "French Open Tennis Coverage"
         },
         {
             "topic": 3,
             "num_articles": 11,
-            "topic_summary": "Football Transfer News Headlines"
+            "topic_summary": "Transfer Window News Roundup"
         },
         {
             "topic": 5,
             "num_articles": 10,
-            "topic_summary": "Nightclub fire in North Macedonia"
+            "topic_summary": "North Macedonia nightclub fire"
         }
     ]
 }
